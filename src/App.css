@@ -25,5 +25,9 @@ button {
   text-align: center;
   width: 6rem;
 }
+.status {
+  font-size: 3rem;
+  margin-bottom: 6rem;
+}
 
 
