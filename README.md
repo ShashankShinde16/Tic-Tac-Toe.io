@@ -1,3 +1,9 @@
+# UserInterface of the application
+
+![UI](https://user-images.githubusercontent.com/119064985/236811707-dc2c05a8-9abe-4d26-be7d-ad059b213865.png)
+
+![UI1](https://user-images.githubusercontent.com/119064985/236812326-9779332c-664d-4cfd-9397-dd5e6f5c7f51.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
