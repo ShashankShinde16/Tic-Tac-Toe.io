@@ -44,14 +44,21 @@ function App() {
 
   const winner = calculateWinner(squares);
   let status;
+  let moves=0;
   if (winner) {
     status = 'Winner: ' + winner;
   } else {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    moves++;
+  }
+
+  function refreshPage() {
+    window.location.reload(false);
   }
 
   return (
-    <div className='t'>
+   <div className='wrap'>
+     <div className='t'>
       <div className="status">{status}</div>
       <div className="t1">
       <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -68,7 +75,9 @@ function App() {
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
+      <button className='btn' onClick={refreshPage}>Restart</button>
     </div>
+   </div>
   );
 }
 
